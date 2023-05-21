@@ -4,10 +4,10 @@ After=multi-user.target
 Wants=multi-user.target
 
 [Service]
-User={{ UserName }}
-EnvironmentFile=/home/{{ UserName }}/antispam-bot.env
+User=ubuntu
+EnvironmentFile=/home/ubuntu/antispam-bot.env
 ExecStart=python3 -m telegram_antispam_bot
-WorkingDirectory=/home/{{ UserName }}/egenix_antispam_bot
+WorkingDirectory=/home/ubuntu/egenix_antispam_bot
 Restart=always
 RestartSec=10
 TimeoutStopSec=90
