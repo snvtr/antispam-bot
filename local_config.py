@@ -9,6 +9,7 @@ Copyright (c) 2022, eGenix.com Software GmbH; mailto:info@egenix.com
 License: MIT
 """
 import telegram_antispam_bot.config_helpers as _tools
+from os import environ
 
 # Name of the client session
 #
@@ -68,12 +69,12 @@ LOG_FILE = 'stdout'
 # credentials and then set these to dummy values in the config. They are
 # only needed during the auth process.
 #
-API_ID = '{{ API_ID }}'
-API_HASH = '{{ API_HASH }}'
+API_ID = environ['API_ID']
+API_HASH = environ['API_HASH']
 
 # Bot token. The @BotFather will provide this.
 # See https://core.telegram.org/bots#3-how-do-i-create-a-bot
-BOT_TOKEN = '{{ BOT_TOKEN }}'
+BOT_TOKEN = environ['BOT_TOKEN']
 
 ### Challenges
 
