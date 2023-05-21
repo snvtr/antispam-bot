@@ -5,7 +5,7 @@ Wants=multi-user.target
 
 [Service]
 User={{ UserName }}
-Environment=
+EnvironmentFile=/home/{{ UserName }}/antispam-bot.env
 ExecStart=python3 -m telegram_antispam_bot
 WorkingDirectory=/home/{{ UserName }}/egenix_antispam_bot
 Restart=always
