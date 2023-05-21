@@ -1,5 +1,5 @@
 [Unit]
-Description=Antispambot
+Description=Antispam-bot
 After=multi-user.target
 Wants=multi-user.target
 
